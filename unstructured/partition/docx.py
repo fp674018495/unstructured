@@ -61,6 +61,7 @@ STYLE_TO_ELEMENT_MAPPING = {
     "List Number 2": ListItem,
     "List Number 3": ListItem,
     "List Paragraph": ListItem,
+    "Body Text First Indent":Text,
     "Macro Text": Text,
     "No Spacing": Text,
     "Normal":Text,
