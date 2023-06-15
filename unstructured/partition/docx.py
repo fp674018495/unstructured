@@ -33,6 +33,13 @@ from unstructured.partition.text_type import (
     is_us_city_state_zip,
 )
 
+class Title2(Text):
+    """A text element for capturing titles."""
+
+    category = "Title2"
+
+    pass
+
 # NOTE(robinson) - documentation on built in styles can be found at the link below
 # ref: https://python-docx.readthedocs.io/en/latest/user/
 #   styles-understanding.html#paragraph-styles-in-default-template
@@ -41,7 +48,7 @@ STYLE_TO_ELEMENT_MAPPING = {
     "Heading 1": Title,
     "Heading 2": Title,
     "Heading 3": Title,
-    "Heading 4": Text,
+    "Heading 4": Title,
     "Heading 5": Text,
     "Heading 6": Text,
     "Heading 7": Text,
@@ -61,7 +68,7 @@ STYLE_TO_ELEMENT_MAPPING = {
     "List Number 2": ListItem,
     "List Number 3": ListItem,
     "List Paragraph": ListItem,
-    "Body Text First Indent":Text,
+    "Body Text First Indent":Title2,
     "Macro Text": Text,
     "No Spacing": Text,
     "Normal":Text,
