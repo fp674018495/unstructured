@@ -142,7 +142,7 @@ def convert_office_doc(input_filename: str, output_directory: str, target_format
     #       multiple-doc-to-docx-file-conversion-using-python
     command = [
         "soffice",
-        "--headless",
+      #  "--headless",
         "--convert-to",
         target_format,
         "--outdir",
